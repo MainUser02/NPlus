@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.content_wrapper {
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 12.5% 0 12.5%;
+}
+
+header {
+    width: 1440px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 170px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main_logo {
+    flex-shrink: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.main_menu {
+    width: 1014px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.all_product_block {
+    margin-right: 20px;
+}
+
+.all_product {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+    /* 120% */
+    text-transform: uppercase;
+}
+
+.about_us_block {
+    margin-right: 20px;
+}
+
+.about_us {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+    /* 120% */
+    text-transform: uppercase;
+}
+
+.contact {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px;
+    /* 120% */
+    text-transform: uppercase;
+}
+
+.icons {
+    display: flex;
+    padding: 8px 20px 8px 13px;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.search_pic,
+.cart_pic {
+    width: 24px;
+    height: 24px;
+}
+
+.main_slider_block {
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 3px;
+    width: 165px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.product_catalog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.product_stack, .product_stack_sec {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.product_stack_sec{
+    margin-top: 50px;
+}
+
+.product_card {
+    width: 228px;
+}
+.product_pic {
+}
+
+.product_pic img{
+    width: 250px;
+}
+
+.product_name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.product_title {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.product_price {
+}
+.product_btn {
+    margin-top: 10px;
+}
+.product_buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 8px;
+    gap: 8px;
+    padding: 0.75rem 1rem;
+    background: #4db84e;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.25sec;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.product_cash{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.slide_pic {
+    height: 856px;
+}
+
+footer{
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.contact_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.phone_footer {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.phone_footer span{
+    margin-right: 20px;
+}
+
+.phone_footer a{
+    color: #000;
+}
+
+.whatsapp_footer {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.whatsapp_footer a{
+    color: #000;
+}
+
+.whatsapp_footer span{
+    margin-right: 20px;
+}
+
+.inst_footer{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main_product_section{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.main_product_block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.product_item_pic {
+}
+
+.product_item_title{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.product_item_info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 700px;
+    height: 400px;
+}
+
+.product_item_info p{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.product_item_info_ozu {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_store {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_herz {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_diagonal {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_cpu {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_sim {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_sim2 {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_charge {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_camera {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_video {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_interfaces {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_connect {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+.product_item_info_price {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
