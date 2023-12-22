@@ -551,6 +551,10 @@ footer{
     font-weight: 400;
 }
 
+video{
+    width: -webkit-fill-available;
+}
+
 #name, #phone, #message {
     width: 390px;
     height: 25px;
@@ -559,4 +563,19 @@ footer{
 
 #message{
     height: 100px;
+}
+
+.about_us_main {
+    width: 100%;
+    margin-top: 100px;
+}
+.about_us_block_main {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.about_us_sub_title {
 }
