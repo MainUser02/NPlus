@@ -13,7 +13,7 @@
         <header>
             <div class="wrapper_header">
                 <div class="logo">
-                    <a href="#">
+                    <a href="./index.html">
                         <p class="main_logo">
                             NadirPlus
                         </p>
@@ -61,7 +61,10 @@
                     <p class="product_item_info_interfaces">Интерфейсы <span>Bluetooth, NFC, Wi-Fi</span></p>
                     <p class="product_item_info_connect">Стандарт связи <span>2G, 3G, 4G (LTE), 5G</span></p>
                     <p class="product_item_info_price">Цена <span>839 990 ₸</span></p>
-                </div>
+                    <div class="product_btn">
+                        <button class="openFormButton" id="product_buy">Заказать обратный звонок</button>
+                    </div>
+                </div>     
             </div>
         </section>
         <footer>
@@ -82,7 +85,20 @@
                 <a class="inst_footer" target="_blank" href="https://www.instagram.com/aktobe_i_phone/?utm_source=ig_web_button_share_sheet">Instagram</a>
             </div>
         </footer>
+        <div class="overlay" id="overlay">
+            <div class="popup">
+                <h2>Форма заявки</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                    <input type="text" id="phone" placeholder="Номер WhatsApp" required>
+                    <textarea id="message" placeholder="Сообщение" required></textarea>
+                    <button type="submit" onclick="sendMessageToTelegram()">Отправить заявку</button>
+                </form>
+                <button id="closeFormButton">Закрыть</button>
+            </div>
+        </div>
     </div>
+    <script src="./form.js"></script>
 </body>
 
 </html>
