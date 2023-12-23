@@ -83,14 +83,19 @@
             <div class="popup">
                 <h2>Форма заявки</h2>
                 <form id="contactForm">
-                    <input type="text" id="name" placeholder="Ваше имя" required>
-                    <input type="text" id="phone" placeholder="Номер WhatsApp" required>
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" id="phone" name="tel" placeholder="Номер WhatsApp" required>
                     <textarea id="message" placeholder="Сообщение" required></textarea>
-                    <button type="submit" onclick="sendMessageToTelegram()">Отправить заявку</button>
+                    <button type="submit">Отправить заявку</button>
                 </form>
                 <button id="closeFormButton">Закрыть</button>
             </div>
         </div>
+    </div>
+    <div id="successMessage">
+        <p>
+            Ваша заявка отправлена, ожидайте звонка!
+        </p>
     </div>
     <script src="./app.js"></script>
     <script src="./form.js"></script>
